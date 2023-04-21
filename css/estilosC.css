@@ -12,7 +12,7 @@ body{
 center{
     position: relative;
     margin: 20px auto;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center,;
     color: rgb(0, 0, 0);
@@ -26,7 +26,7 @@ center{
     display: flex;
     margin: 20px auto;
     position: relative;
-    width: 600px;
+    width: 550px;
     height: auto;
     border: 1px solid #af0000;
     border-radius: 20px;
@@ -41,8 +41,8 @@ center{
     border: 10px solid #b171a8;
     background-color: azure;
     position: relative;
-    width: 470px;
-    height: 100px;
+    width: 430px;
+    height: 90px;
     font-size: 50px;
     border-radius: 10px;
     
@@ -55,15 +55,15 @@ center{
     padding: 32px;
     width: 15px;
     text-align: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: rgb(207, 115, 166);
 }
 #borar{
     border-radius: 10px;
     background: rgb(207, 115, 166);
-    width: 422px;
-    height: 30px;
+    width: 380px;
+    height: 20px;
     cursor: pointer;
     padding: 32px;
 }
