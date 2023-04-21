@@ -31,32 +31,47 @@ center{
     border: 1px solid #af0000;
     border-radius: 20px;
     background: #ddd;
-    flex-direction: row;
-    flex-flow: nowrap;
+    flex-flow: wrap;
+    justify-content: center;
 }
 #operaciones{
-    
-    flex-wrap: nowrap;
+    line-height: 90px;
+    text-align: end;
     border: 2px solid #2600ff;
-    flex-direction: row;
     background-color: azure;
     position: relative;
-    width: 600px;
+    width: 480px;
     height: 100px;
-    font-size: medium;
+    font-size: 50px;
     border-radius: 10px;
-    justify-items: center;
+    
 }
 
 
-#calcular ul li{
-
-    
-    float: left;
+#calcular li{
+    margin: 5px;
     padding: 32px;
     width: 15px;
     text-align: center;
     width: 50px;
     height: 50px;
-    background-color: bisque;
+    background-color: rgb(255, 0, 0);
+}
+#borar{
+    background: #ff0000;
+    width: 422px;
+    height: 30px;
+    cursor: pointer;
+    padding: 32px;
+}
+#calcular li:hover{
+    color: beige;
+    background: mediumorchid;
+}
+#calcular li:active{
+    
+}
+#borar:hover{
+    color: beige;
+    background-color: mediumorchid;
 }
