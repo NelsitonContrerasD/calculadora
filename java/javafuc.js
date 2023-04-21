@@ -1,21 +1,22 @@
+
 var cal ={
-    teclas:document.querySelectorAll("#calcular li"),
+    teclas:document.querySelectorAll("#numero"),
     operaciones:document.querySelector("#operaciones"),
     accion:null,
     digito:null,
     cantisignos:0,
     cantidecimal:false,
-    resultado:false,
+    resultado:false
 }
 var me={
     inicio:function(){
         for(var i=0;i<cal.teclas.length;i++){
-            cal.teclas[i].addEventListener("click",me.oprimirtecla);
+            cal.teclas[i].addEventListener("click",me.oprimirteclas);
         }
     },
-    oprimirtecla:function(teclas) 
+    oprimirteclas:function(teclas) 
     {
-        cal.accion = teclas.target.getAttribute("class");
+        cal.accion = teclas.getAtribute("class");
         cal.digito = teclas.target.innerHTML;
         me.calculadora(cal.accion,cal.digito);
     },
@@ -23,17 +24,20 @@ var me={
     {
         switch(accion){
             case"numero":
-            cal.cantisignos=0;
-            if(cal.operaciones.innerHTML=="0"){
-                cal.operaciones.innerHTML=digito;
+            cal.cantisignos = 0;
+            if(cal.operaciones.innerHTML == "0"){
+                cal.operaciones.innerHTML = digito;
             }
             else{
-                if(cal.resultado)
-                cal.resultado=false;
-                cal.resultado.innerHTML=digito;
-            }
+                if(cal.resultado){
+                    cal.resultado=false;
+                    cal.resultado.innerHTML = digito;
+                }
+                else{
+                    cal.operaciones.innerHTML += digito
+                }
+            }break;
         }
-    },
+    }
 }
 me.inicio()
-me.calculadora()
