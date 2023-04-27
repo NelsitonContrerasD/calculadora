@@ -25,7 +25,7 @@ center{
     border-radius: 20px 20px 0 0;
 
 }
-.calcular{
+#calcular{
     display: flex;
     margin: 20px auto;
     position: relative;
@@ -48,7 +48,7 @@ center{
     font-size: 50px;
     border-radius: 10px;
 }
-.calcular li{
+#calcular li{
     border-radius: 10px;
     margin: 5px;
     padding: 32px;
@@ -66,11 +66,11 @@ center{
     cursor: pointer;
     padding: 32px;
 }
-.calcular li:hover{
+#calcular li:hover{
     color: beige;
     background: rgb(186, 92, 209);
 }
-.calcular li:active{
+#calcular li:active{
     background: rgb(172, 206, 121);
     
 }
