@@ -10,7 +10,7 @@ background: linear-gradient(to right, #89216B, #DA4453);
     list-style: none;
     padding: 0;
     text-decoration: none;
-
+    font-size: 23px;
 }
 center{
     position: relative;
@@ -26,6 +26,7 @@ center{
 
 }
 #calcular{
+
     display: flex;
     margin: 20px auto;
     position: relative;
@@ -49,6 +50,7 @@ center{
     border-radius: 10px;
 }
 #calcular li{
+    cursor:pointer;
     border-radius: 10px;
     margin: 5px;
     padding: 32px;
@@ -59,6 +61,7 @@ center{
     background-color: rgb(207, 115, 166);
 }
 #borar{
+    cursor: pointer;
     border-radius: 10px;
     background: rgb(207, 115, 166);
     width: 380px;
@@ -66,6 +69,26 @@ center{
     cursor: pointer;
     padding: 32px;
 }
+#c{
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 32px;
+    width: 15px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(207, 115, 166);
+
+}
+#c:hover{
+    color: beige;
+    background: rgb(186, 92, 209);
+}
+#c:active{
+    background: rgb(172, 206, 121);
+}
+
 #calcular li:hover{
     color: beige;
     background: rgb(186, 92, 209);

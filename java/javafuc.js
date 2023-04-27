@@ -1,5 +1,5 @@
 
-var cal ={
+/*var cal ={
     teclas:document.querySelectorAll("#calcular li"),
     operacion:document.querySelector("#operaciones"),
     accion:null,
@@ -73,6 +73,17 @@ var me={
         }
     }
 }
-me.inicio()
+me.inicio()*/
+const pantalla = document.querySelector("#operaciones");
+const botones = document.querySelectorAll(".boton");
+
+botones.forEach(boton => {
+    boton.addEventListener("click",()=>{
+        const botonapretado = boton.textContent;
+
+        pantalla.textContent = botonapretado;
+    })
+})
+
 
 
