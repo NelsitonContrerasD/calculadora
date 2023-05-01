@@ -11,8 +11,10 @@ background: linear-gradient(to right, #89216B, #DA4453);
     padding: 0;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 300;
 }
 center{
+
     position: relative;
     margin: 20px auto;
     width: 410px;
@@ -38,7 +40,8 @@ center{
     flex-flow: wrap;
     justify-content: center;
 }
-.operaciones{
+#operacion{
+    font-weight: 00;
     line-height: 50px;
     text-align: end;
     border: 10px solid #b171a8;
@@ -48,6 +51,7 @@ center{
     height: 50px;
     font-size: 40px;
     border-radius: 10px;
+    font-weight: 300;
     
 }
 .btn{
